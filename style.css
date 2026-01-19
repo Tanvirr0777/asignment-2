@@ -8,7 +8,7 @@
 }
 
 /*shared style*/
-.navber,.navber ul, .btn,.msg,.tow-btn,.card-items,.time,.meet-host,.host-icon{
+.navber,.navber ul, .btn,.msg,.tow-btn,.card-items,.time,.meet-host,.host-icon,.foot-icon{
     display: flex;
     align-items: center;
 }
@@ -173,7 +173,6 @@
     padding-bottom: 120px;
     text-align: center;
 }
-
 .quality-container{
     width: 75%;
     max-width: 1200px;
@@ -189,7 +188,7 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
 } 
-.quality-card p,.featured-container .card p,.host-intro p{
+.quality-card p,.featured-container .card p,.host-intro p,.footer-container p{
     font-size: 1rem;
     line-height: 1.25rem;
     color: white;
@@ -339,8 +338,45 @@
 #youtube i{
     color: #FB09B4;
 }
+
+/*footer*/
+#foot{
+    max-width: 1600px;
+    background-color: #1A0B2E;
+    background-image: url(./assets/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    padding-top: 120px; 
+    padding-bottom: 120px;
+}
+.footer-container{
+    width: 85%;
+    max-width: 1360px;
+    margin: 0 auto;
+    text-align: center;
+}
+#foot-head,.foot-icon{
+    margin-bottom: 2rem;
+}
+.foot-icon{
+    justify-content: center;
+    gap: 2.5rem;
+}
+#white{
+    margin-right: 2.5px;
+    color: white;
+}
+.icon-name,.footer-container p{
+   color: white;
+   opacity: 60%;
+}
+
 /*responsive*/
 @media screen and (max-width:576px) {
+ #head{
+    width: 100%;
+ }
     .navber{
         margin-top: 18px;
     }
@@ -355,12 +391,12 @@
     .tow-btn{
         width: 95%;
     }
-.banner-container{
-   padding-bottom: 2rem;
-}
 .banner-container .banner-img{
     max-width: 55%;
     margin:  0 auto;
+}
+.banner-container h1{
+    font-size: 2rem;
 }
 .banner-img img{
     width: 30%;
@@ -453,5 +489,21 @@
     max-width: 50%;
     margin: 0 auto;
     justify-content: center;
+}
+#foot{
+    width: 100%;
+    padding-top:2.5rem;
+    padding-bottom:2.5rem;
+}
+.footer-container{
+    margin: 0 auto;
+    width: 90%;
+}
+.foot-icon{
+    width: 80%;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
 }
 }
