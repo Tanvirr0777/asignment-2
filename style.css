@@ -6,8 +6,10 @@
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
 }
-
-/*shared style*/
+body{
+    max-width: 1600px;
+    margin: 0 auto;
+}
 .navber,.navber ul, .btn,.msg,.tow-btn,.card-items,.time,.meet-host,.host-icon,.foot-icon{
     display: flex;
     align-items: center;
@@ -63,8 +65,9 @@
 #banner{
     max-width: 1600px;
     background-image: url(./assets/hero-bg.png);
-    background-size: 100% auto;
+    background-size: auto auto;
     background-repeat: no-repeat;
+    background-position: center;
 }
 .banner-container{
     max-width: 560px;
@@ -122,8 +125,8 @@
     border-radius: 30px;
     padding: 8px 16px;
     position: absolute;
-    left: 275px;
-    top: 20px;
+    left: 75%;
+    top: 5%;
 }
 
 /*about section*/
@@ -394,7 +397,7 @@ ul li:hover,.icon-name:hover{
 .icon-name:hover{
     opacity: 100%;
 }
-.card:hover{
+.card:hover,.meet-host-container:hover{
     border: 2px solid #FB09B4;
 }
 /*responsive*/
@@ -416,6 +419,14 @@ ul li:hover,.icon-name:hover{
     .tow-btn{
         width: 95%;
     }
+ #banner{
+    width: 100%;
+    background-size: 100%;
+    background-position: top;
+}   
+.banner-container{
+    padding-bottom: 2rem;
+}
 .banner-container .banner-img{
     max-width: 55%;
     margin:  0 auto;
@@ -429,16 +440,16 @@ ul li:hover,.icon-name:hover{
     padding: 50px; 
 }
 .head-on-img{
-    left:60% ;
-    top: 4px;
+    left:69% ;
+    top: 2%;
 }
 #about{
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
 }
 .about-container{
     width: 95%;
     text-align: center;
-     padding-top: 2rem;
+    padding-top:0;
 }
 .about-container h1{
     font-size: 2rem;
@@ -483,7 +494,6 @@ ul li:hover,.icon-name:hover{
     width: 95%;
     max-width: 95%;
     padding-top: 40px;
-    /*padding-bottom: 120px;*/
 }
 .card-items{
     flex-direction: column;
@@ -492,10 +502,8 @@ ul li:hover,.icon-name:hover{
 .video{
     width: 100%;
 }
-
 #host{
     width: 100%;
-   /* padding-bottom: 120px;*/
 }
 .host-container{
     width: 95%;
@@ -525,7 +533,7 @@ ul li:hover,.icon-name:hover{
     width: 90%;
 }
 .foot-icon{
-    width: 65%;
+    width: 69%;
     flex-wrap: wrap;
     gap: 1rem;
     margin: 0 auto;
