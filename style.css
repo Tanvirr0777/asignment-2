@@ -155,7 +155,14 @@ body{
     opacity: 80%;
 }
 .about-text{
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
+}
+hr{
+    max-width: 100%;
+    max-width: 1200px;
+    margin-bottom: 5rem;
+    color: #FFFFFF;
+    opacity: 10%;
 }
 .about-text .p-1{
     margin: 1rem 0px 2rem 0px;
